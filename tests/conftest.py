@@ -29,10 +29,13 @@ def browser(config):
   if config['browser'] == 'Firefox':
     b = Firefox()
   elif config['browser'] == 'Chrome':
-    b = Chrome()
+    opts = ChromeOptions()  
+    opts.add_experimental_option('useAutomationExtension', False)
+    b = Chrome(options=opts)
   elif config['browser'] == 'Headless Chrome':
     opts = ChromeOptions()
     opts.add_argument('headless')
+    opts.add_experimental_option('useAutomationExtension', False)
     b = Chrome(options=opts)
   elif config['browser'] == 'Headless Firefox':
     opts = FirefoxOptions()

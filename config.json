@@ -1,4 +1,4 @@
 {
-  "browser": "Headless Chrome",
+  "browser": "Chrome",
   "implicit_wait": 20
 }
