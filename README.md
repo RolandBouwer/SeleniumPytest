@@ -1,4 +1,4 @@
-# tau-intro-selenium-py
+# sample-selenium-py
 This repository contains the companion project for the
 *Introduction to Selenium WebDriver with Python* course
 taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
