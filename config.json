@@ -1,4 +1,5 @@
 {
-  "browser": "Chrome",
-  "implicit_wait": 20
+  "browser": "Headless Chrome",
+  "implicit_wait": 20,
+  "reportFolder" : "/temp/SeleniumReports/"
 }
