@@ -107,5 +107,5 @@ venv.bak/
 .vscode
 .idea
 *.iml
-Screenshots/
+screenshots/*
 *report.html
