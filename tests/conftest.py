@@ -80,6 +80,7 @@ def pytest_runtest_makereport(item):
         xfail = hasattr(report, 'wasxfail')
         if (report.skipped and xfail) or (report.failed and not xfail):
             # file_name = report.nodeid.replace("::", "_")+".png"
+            ensure_dir('./screenshots' + '/')
             add_name = '{}_{}'.format(report.nodeid.split("::")[1], datetime.now().strftime("%Y-%m-%d_%H.%M.%S"))     
             file_name = PATH('./screenshots' + '/' + add_name + '.png')
             cp_file_name = "./screenshots" + '/' + add_name + ".png"
@@ -89,4 +90,9 @@ def pytest_runtest_makereport(item):
                                                          'onclick="window.open(this.src)" align="right"/></div>'
                 extra.append(pytest_html.extras.html(html))
         report.extra = extra
+
+def ensure_dir(file_path):
+    directory = os.path.dirname(file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 

@@ -109,3 +109,5 @@ venv.bak/
 *.iml
 screenshots/*
 *report.html
+geckodriver.log
+assets/
