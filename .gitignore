@@ -110,4 +110,4 @@ venv.bak/
 screenshots/*
 *report.html
 geckodriver.log
-assets/
+assets/*
