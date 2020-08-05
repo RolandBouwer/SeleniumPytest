@@ -1,0 +1,1 @@
+pipenv run python -m pytest -n 3 --html=htmlreport.html
